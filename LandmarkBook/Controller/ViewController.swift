@@ -11,7 +11,8 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     
     @IBOutlet weak var tableView: UITableView!
     
-
+    var landmarkNames = [String]()
+    var landmarkImages = [UIImage]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +22,14 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         tableView.dataSource = self
         
         
-        var landmarkNames = [String]()
+        
         landmarkNames.append("Colosseum")
         landmarkNames.append("Brandenburg Tor")
         landmarkNames.append("Kız Kulesi")
-        landmarkNames.append("Buckhingham Palace")
+        landmarkNames.append("Buckingham Palace")
         landmarkNames.append("Empire State")
         
-        var landmarkImages = [UIImage]()
+        
         landmarkImages.append(UIImage(named: "colosseumroma")!)
         landmarkImages.append(UIImage(named: "brandenburgtorberlin")!)
         landmarkImages.append(UIImage(named: "kızkulesiistanbul")!)
@@ -39,16 +40,10 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     }
     
     
-    
-    
-    
-    
-    
-    
     // UITableView kullanmak istiyorsak bu iki fonksiyonu çalıştırmamız zorunlu. Ancak UITableViewDelegate ve UITableViewDataSource protokollerini eklemezsek bu fonksiyonlar çalışmaz.
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return landmarkNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -56,7 +51,7 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         //eski yöntem (cell.textLabel?.text = "test")
         //bu çalışmazsa yazılması gereken kod
         var content = cell.defaultContentConfiguration()
-        content.text = "Test"
+        content.text = landmarkNames[indexPath.row]
         //content.secondaryText = "farklı formatlar"
         cell.contentConfiguration = content
         return cell

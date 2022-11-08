@@ -20,6 +20,22 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         tableView.delegate = self
         tableView.dataSource = self
         
+        
+        var landmarkNames = [String]()
+        landmarkNames.append("Colosseum")
+        landmarkNames.append("Brandenburg Tor")
+        landmarkNames.append("Kız Kulesi")
+        landmarkNames.append("Buckhingham Palace")
+        landmarkNames.append("Empire State")
+        
+        var landmarkImages = [UIImage]()
+        landmarkImages.append(UIImage(named: "colosseumroma")!)
+        landmarkImages.append(UIImage(named: "brandenburgtorberlin")!)
+        landmarkImages.append(UIImage(named: "kızkulesiistanbul")!)
+        landmarkImages.append(UIImage(named: "buckhingamlondon")!)
+        landmarkImages.append(UIImage(named: "empirestatenewyork")!)
+        
+        
     }
     
     

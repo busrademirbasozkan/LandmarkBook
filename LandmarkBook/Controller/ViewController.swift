@@ -54,6 +54,14 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         }
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.landmarkNames.remove(at: indexPath.row)
+            self.landmarkImages.remove(at: indexPath.row)
+            self.tableView.deleteRows(at: [indexPath], with: .right)
+        }
+    }
+    
     
     
     // UITableView kullanmak istiyorsak bu iki fonksiyonu çalıştırmamız zorunlu. Ancak UITableViewDelegate ve UITableViewDataSource protokollerini eklemezsek bu fonksiyonlar çalışmaz.

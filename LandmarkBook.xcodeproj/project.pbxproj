@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8D2AD55291AA3000009DAE6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D2AD54291AA3000009DAE6 /* DetailsViewController.swift */; };
 		E8EA6C09291A7D860099D563 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA6C08291A7D860099D563 /* AppDelegate.swift */; };
 		E8EA6C0B291A7D860099D563 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA6C0A291A7D860099D563 /* SceneDelegate.swift */; };
 		E8EA6C0D291A7D860099D563 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EA6C0C291A7D860099D563 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E8D2AD54291AA3000009DAE6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		E8EA6C05291A7D860099D563 /* LandmarkBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LandmarkBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8EA6C08291A7D860099D563 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8EA6C0A291A7D860099D563 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				E8EA6C1E291A7DBF0099D563 /* SupportingFiles */,
 				E8EA6C1D291A7DB40099D563 /* View */,
 				E8EA6C1C291A7DA00099D563 /* Controller */,
+				E8D2AD54291AA3000009DAE6 /* DetailsViewController.swift */,
 			);
 			path = LandmarkBook;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				E8EA6C0D291A7D860099D563 /* ViewController.swift in Sources */,
 				E8EA6C09291A7D860099D563 /* AppDelegate.swift in Sources */,
 				E8EA6C0B291A7D860099D563 /* SceneDelegate.swift in Sources */,
+				E8D2AD55291AA3000009DAE6 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

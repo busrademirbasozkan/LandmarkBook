@@ -22,13 +22,11 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         tableView.dataSource = self
         
         
-        
         landmarkNames.append("Colosseum")
         landmarkNames.append("Brandenburg Tor")
         landmarkNames.append("Kız Kulesi")
         landmarkNames.append("Buckingham Palace")
         landmarkNames.append("Empire State")
-        
         
         landmarkImages.append(UIImage(named: "colosseumroma")!)
         landmarkImages.append(UIImage(named: "brandenburgtorberlin")!)
@@ -38,6 +36,12 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
         
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+        
+    }
+    
     
     
     // UITableView kullanmak istiyorsak bu iki fonksiyonu çalıştırmamız zorunlu. Ancak UITableViewDelegate ve UITableViewDataSource protokollerini eklemezsek bu fonksiyonlar çalışmaz.

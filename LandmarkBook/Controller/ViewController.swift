@@ -37,7 +37,12 @@ class ViewController: UIViewController , UITableViewDelegate, UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
-        cell.textLabel?.text = "test"
+        //eski yöntem (cell.textLabel?.text = "test")
+        //bu çalışmazsa yazılması gereken kod
+        var content = cell.defaultContentConfiguration()
+        content.text = "Test"
+        //content.secondaryText = "farklı formatlar"
+        cell.contentConfiguration = content
         return cell
     }
 
